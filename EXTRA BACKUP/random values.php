@@ -1,0 +1,1 @@
+<input type="text" name="userid" value="<?php $a= rand(100,9999); echo $a;?>">

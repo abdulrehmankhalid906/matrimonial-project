@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-item img{
+    width: 100% !important;
+    height: 70vh !important;
+}
+.navbar{
+    color: #a94442 !important;
+}   
+.btn-danger, .btn-success{
+    margin: 14px;
+}

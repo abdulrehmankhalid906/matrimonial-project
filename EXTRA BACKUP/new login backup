@@ -1,0 +1,29 @@
+<?php
+session_start();
+include ('connection.php');
+//For User Login...
+if(isset($_POST['login'])){
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    //email_check to run the search query
+    $email_check = "select * from registerinfo where email='$email' AND password ='$password'";
+    $query = mysqli_query($con,$email_check);
+
+    if(mysqli_num_rows($query) > 0){
+        $res=mysqli_fetch_assoc($query);
+        //if user is 0 Deactivated || Process
+        //if user is 1 Activated   || Verified
+        if($res['status']==0){
+            $_SESSION['username'] = $res['username'];
+            header('location:home.php');
+        }
+        else{
+            echo "Your Account is not verified! Please Contact Admin";
+        }
+    }
+    else{
+        echo "Email or password incorrect";
+    }
+}
+?>
