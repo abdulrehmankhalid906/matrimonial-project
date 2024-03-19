@@ -25,14 +25,15 @@ if(isset($_POST['register'])){
     $occup = $_POST['occup'];
     $income = $_POST['income'];
     $nation = $_POST['nation'];
+    $status = 0;
     $city = $_POST['city'];
     $image = $_FILES['user_image']['name'];
     $filename = $_FILES['user_image']['name'];
 
     /*Insert Query*/
-    $query = "INSERT INTO registerinfo (username,email,password,whatsapp,user_image,userid,bio,self,gender,age,
+    $query = "INSERT INTO registerinfo (username,email,password,status,whatsapp,user_image,userid,bio,self,gender,age,
     martial,religion,caste,sect,color,height,study,occup,income,nation,city)
-    VALUES ('$username','$email','$password','$whatsapp','$image','$userid','$bio','$self','$gender','$age','$martial',
+    VALUES ('$username','$email','$password','$status','$whatsapp','$image','$userid','$bio','$self','$gender','$age','$martial',
     '$religion','$caste','$sect','$color','$height','$study','$occup','$income','$nation','$city')";
     $query_run = mysqli_query($con,$query);
 
