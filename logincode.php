@@ -6,7 +6,7 @@ if(isset($_POST['login'])){
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $email_check = "select * from registerinfo where email='$email' AND password ='$password'";
+    $email_check = "SELECT * FROM registerinfo WHERE email='$email' AND password ='$password'";
     $query = mysqli_query($con,$email_check);
 
     if(mysqli_num_rows($query) > 0){

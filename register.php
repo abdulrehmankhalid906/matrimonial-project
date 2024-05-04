@@ -195,11 +195,11 @@ include("include/user_header.php");
                     <!--row 9-->
                     <div class="row">
                         <div class="d-grid gap-2 col-6 mx-auto">
-                            <button type="submit" class="btn btn-success" value="submit" name="register">Register</button>
+                            <button type="submit" class="btn btn-primary" value="submit" name="register">Register</button>
                         </div>
 
                         <div class="d-grid gap-2 col-6 mx-auto">
-                            <button type="reset" class="btn btn-danger" value="Clear">Reset</button>
+                            <button type="reset" class="btn btn-secondary" value="Clear">Reset</button>
                         </div>
                     </div>
                 </form>
@@ -207,7 +207,5 @@ include("include/user_header.php");
         </div>
     </div>
     <?php include("include/user_footer.php"); ?>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
